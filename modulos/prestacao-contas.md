@@ -8,7 +8,7 @@ role: admin
 routes: ["#/wp-admin/admin.php?page=rit360-solidario-prestacao-contas"]
 screenshots: [prestacao-contas]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-15
+last_verified: 2026-07-21
 status: publicado
 ---
 
