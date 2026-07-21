@@ -8,7 +8,7 @@ role: admin
 routes: ["#/wp-admin/admin.php?page=rit360-solidario-settings"]
 screenshots: [config-organizacao, config-visual, config-lembretes, config-emails, config-pdf, config-avancado]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-15
+last_verified: 2026-07-21
 status: publicado
 ---
 
