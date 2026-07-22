@@ -12,6 +12,17 @@ Destino dos arquivos: `manual/assets/img/`.
 > reusaram o CSS existente (visualmente idênticas). `api-chaves.png` passou a ser
 > capturada (estado "Expirada" + entrega de webhook "failed" com tooltip de erro).
 
+## Pendências de recaptura (fazer junto da próxima implementação)
+
+Ambas foram migradas para React (F3b) mas **ficaram fora da recaptura de 2026-07-21**
+(não estavam na lista pedida e exigem estado específico). Os prints atuais mostram a
+UI PHP antiga. Recapturar quando houver a próxima mexida no plugin:
+
+| Arquivo | Rota / estado necessário | Deve mostrar |
+|---|---|---|
+| `setup-wizard.png` | `…?page=bs-setup` — exige o plugin em **modo setup** (ou reabrir o assistente) | Passo 1 do assistente (Organização) na UI React v2.24.0+ |
+| `produto-doacao.png` | editar o produto de doação (ex.: `/wp-admin/post.php?post=67&action=edit`), aba **"Configuração de Doação"** | Metabox do WooCommerce (valores, valor livre, frase de impacto, vídeo) na UI atual |
+
 ## Regras
 - **Admin** (área `/wp-admin/`): capturar **logado** (a barra do WordPress pode
   aparecer — é a área administrativa).
