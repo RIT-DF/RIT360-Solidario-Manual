@@ -1,8 +1,16 @@
-# Roteiro de capturas — Manual RIT360 Solidário (v2.6.1)
+# Roteiro de capturas — Manual RIT360 Solidário
 
-Ambiente: **dev-wp** (`http://localhost:3080/`), plugin 2.6.1, OSC de exemplo
-"Instituto Esperança", dados fictícios semeados. Viewport **1920×1080** em todas.
+Ambiente: **dev-wp** (`http://localhost:3080/`), OSC de exemplo "Instituto
+Esperança", dados fictícios semeados. Viewport **1920×1080** em todas.
 Destino dos arquivos: `manual/assets/img/`.
+
+> **Recaptura 2026-07-21 (plugin v2.24.0):** todas as telas de **admin** foram
+> refeitas contra a UI **React** (migração #18) — cada tela tem o cabeçalho com
+> logo + seção + "RIT360 Solidário · vX.Y.Z" e os botões "Manual do usuário"/
+> "Enviar feedback" no canto superior direito. **O selo de versão aparece em cada
+> print → recapturar TODO o admin a cada bump de versão.** As superfícies públicas
+> reusaram o CSS existente (visualmente idênticas). `api-chaves.png` passou a ser
+> capturada (estado "Expirada" + entrega de webhook "failed" com tooltip de erro).
 
 ## Regras
 - **Admin** (área `/wp-admin/`): capturar **logado** (a barra do WordPress pode
@@ -35,22 +43,21 @@ Destino dos arquivos: `manual/assets/img/`.
 | `produto-doacao.png` | editar produto 67 (`/wp-admin/post.php?post=67&action=edit`), aba "Configuração de Doação" | Campos: valores, valor livre, frase de impacto, vídeo |
 | `feedback-modal.png` | qualquer tela do plugin → clicar "Enviar feedback" | Modal de feedback |
 
-## API e integrações (v2.10–2.12) — prints opcionais, ainda NÃO capturados
+## API e integrações — `api-chaves.png` (capturada em v2.24.0)
 
-A página `modulos/api-integracoes.md` foi escrita sem prints obrigatórios (é referência
-técnica). Se quiser ilustrá-la depois, capturar no dev-wp, admin logado, viewport
-1920×1080, salvando em `manual/assets/img/` com estes nomes — e então referenciá-los na
-página e no front-matter `screenshots`:
+Rota: menu **RIT360 Solidário → Shortcodes e API → API** (submenu "API"). Página inteira,
+admin logado, 1920×1080. A tela agrupa numa só captura: **endereço base**, **Nova chave**
+(rótulo + escopos + validade), **Chaves** (com estados *Ativa*/*Expirada*/*Revogada*),
+**Novo destino** de webhook, **Webhooks** e **Últimas entregas** (com entrega *failed* +
+tooltip de erro). Referenciada em `modulos/api-integracoes.md` (front-matter `screenshots:
+[api-chaves]`).
+
+Prints ainda **opcionais** (não capturados; a página é referência técnica e já ilustra o
+essencial com `api-chaves.png`):
 
 | Arquivo (sugerido) | Rota / ação | Deve mostrar |
 |---|---|---|
-| `api-chaves.png` | **RIT360 Solidário → Shortcodes e API**, aba **API**, seção Chaves | Lista de chaves + botão "Nova chave" + seletor de escopos e validade |
 | `api-chave-criada.png` | após criar uma chave | Aviso "copie agora, aparece uma única vez" com a chave |
-| `api-webhooks.png` | mesma aba API, seção Webhooks | Form "Novo destino" (URL + eventos + incluir PII) + botão "Enviar teste" + log de entregas |
-
-> Confirmar com o Bruno a rota exata da aba API (submenu vs. aba dentro de
-> `rit360-solidario-shortcodes`) antes de capturar — a página usa a navegação por nome
-> de menu ("Shortcodes e API → aba API"), que não depende do query string.
 
 ## Front-end — deslogado (sem barra do WordPress)
 

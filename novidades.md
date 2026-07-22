@@ -21,6 +21,38 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 
 ---
 
+## Versões 2.14 a 2.24 — Painel com a cara da família RIT360
+
+As telas do plugin no painel administrativo foram **repaginadas**. O que você faz
+continua igual — mudou o visual, que ficou mais moderno e alinhado à família RIT360.
+
+- **Novo visual das telas.** Painel, doadores, projetos, campanhas, prestação de
+  contas, configurações, auditoria LGPD e shortcodes ganharam **cartões** com a cor
+  da marca e uma leitura mais limpa. As páginas públicas (formulário de doação,
+  listagens e portal do doador) continuam com a mesma aparência de sempre.
+- **Cabeçalho em todas as telas.** No topo de cada tela aparece a **logomarca**, o
+  nome da seção e a **versão instalada** (ex.: “RIT360 Solidário · v2.24.0”). No
+  canto direito ficam os botões **Manual do usuário** e **Enviar feedback** — antes
+  numa barra separada, agora integrados ao cabeçalho.
+- **“Enviar feedback” numa janela.** O botão abre uma janela onde você relata um
+  problema, manda uma sugestão, deixa um elogio ou registra um depoimento, com a
+  opção de anexar imagens ou PDF. É o canal direto com a equipe do produto.
+
+**Melhorias pontuais desta leva (v2.24):**
+
+- **Doadores:** a planilha (XLSX) de doadores passou a incluir a coluna **CNPJ** dos
+  doadores pessoa jurídica; e as ações de manutenção (*reprocessar recibos*,
+  *atribuir projeto*) agora mostram um **aviso com a contagem** do que foi feito.
+- **API e integrações:** uma chave vencida agora aparece corretamente como
+  **“Expirada”**; as ações de chave e de webhook mostram **aviso de sucesso**; e as
+  entregas de webhook que falharam trazem o **último erro** num ícone de informação
+  (ⓘ), para diagnosticar sem sair da tela.
+- **Prestação de contas:** o texto perto dos botões de exportar ficou mais claro —
+  as exportações (CSV/XLSX) vêm com os **dados pessoais mascarados por padrão
+  (LGPD)**.
+
+---
+
 ## Versões 2.13 — Mais privacidade para o doador (LGPD)
 
 Melhorias de transparência e de proteção de dados. A maioria funciona **de

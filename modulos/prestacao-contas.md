@@ -41,9 +41,9 @@ livre** (de/até) ou o **exercício** (ano civil). Todo o conteúdo da tela se a
 
 > ⚠️ **Atenção — máscara de dados**
 >
-> As exportações CSV/XLSX vêm com os **dados pessoais mascarados por padrão**.
-> Gerar uma versão **sem máscara** exige uma ação explícita sua — use apenas
-> quando for realmente necessário e trate o arquivo com cuidado.
+> As exportações (CSV/XLSX) vêm com os **dados pessoais mascarados, por padrão
+> (LGPD)**. Ainda assim, trate os arquivos com cuidado e compartilhe apenas com
+> quem precisa.
 
 > 💡 **Você sabia?**
 >

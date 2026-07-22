@@ -5,9 +5,9 @@ permalink: /primeiros-passos/
 task: primeiros-passos
 role: admin
 routes: ["#/wp-admin/admin.php?page=bs-setup", "#/wp-admin/admin.php?page=rit360-solidario"]
-screenshots: [setup-wizard, painel, doe-pagina]
+screenshots: [setup-wizard, painel, doe-pagina, feedback-modal]
 source_docs: [PRD#5.4, PRODUCT.md]
-last_verified: 2026-07-15
+last_verified: 2026-07-21
 status: publicado
 ---
 
@@ -35,6 +35,24 @@ Antes de começar, vale entender os dois papéis:
 > dispensar senha e cadastro, o RIT360 Solidário remove a maior fonte de
 > desistência — e ainda evita guardar mais dados pessoais do que o necessário
 > (um princípio da LGPD).
+
+## O cabeçalho das telas do plugin
+
+Todas as telas do RIT360 Solidário no painel administrativo têm um **cabeçalho**
+no topo, com a logomarca à esquerda e, logo abaixo do título, o nome da seção e a
+**versão instalada** (por exemplo, “RIT360 Solidário · v2.24.0”). É o jeito rápido
+de conferir qual versão você está usando.
+
+No canto superior direito ficam dois botões, presentes em **qualquer tela** do
+plugin:
+
+- **Manual do usuário** — abre este manual on-line.
+- **Enviar feedback** — abre uma janela para você relatar um problema, mandar uma
+  sugestão, deixar um elogio ou registrar um depoimento. Escolha o tipo, escreva a
+  mensagem (seu e-mail já vem preenchido para retorno) e, se quiser, anexe imagens
+  ou um PDF. É o canal direto para falar com a equipe do produto.
+
+![A janela “Enviar feedback”](/assets/img/feedback-modal.png)
 
 ## 1. Requisitos
 

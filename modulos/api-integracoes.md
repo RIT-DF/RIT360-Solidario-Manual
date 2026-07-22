@@ -6,7 +6,7 @@ permalink: /modulos/api-integracoes/
 task: modulo-api-integracoes
 role: admin
 routes: ["#/wp-admin/admin.php?page=rit360-solidario-shortcodes"]
-screenshots: []
+screenshots: [api-chaves]
 source_docs: [PRODUCT.md, CHANGELOG.md]
 last_verified: 2026-07-21
 status: publicado
@@ -48,6 +48,8 @@ Por exemplo, para consultar os números agregados, o endereço completo é
 Nenhuma chamada à API funciona sem uma **chave de integração**. A chave identifica quem
 está acessando e **o que essa integração pode fazer** (os escopos).
 
+![Chaves de integração e webhooks na aba API](/assets/img/api-chaves.png)
+
 ### Criar uma chave
 
 1. Abra **RIT360 Solidário → Shortcodes e API** e vá à aba **API**.
@@ -79,6 +81,19 @@ Na mesma aba **API**, cada chave tem o botão **Revogar**. Ao revogar, ela para 
 funcionar **na hora** — qualquer integração que a usava deixa de ter acesso. Revogue as
 chaves que você não usa mais, ou qualquer chave que possa ter vazado.
 
+Cada ação de chave (criar, revogar) mostra um **aviso de confirmação** assim que é
+concluída.
+
+### Estado da chave
+
+Na lista, cada chave exibe um estado:
+
+- **Ativa** — funcionando normalmente.
+- **Expirada** — passou da data de validade e **não autentica mais**. A chave aparece
+  marcada como *Expirada* (não some da lista) para você identificar e substituir: crie
+  uma nova e atualize a integração que a usava.
+- **Revogada** — desativada manualmente por você.
+
 ---
 
 ## Escopos
@@ -94,6 +109,7 @@ escrever. Marque só o necessário — é o princípio do menor privilégio.
 | `donors:read_pii` | Ler os **dados pessoais completos** dos doadores (nome, e-mail, documento). **Sensível.** |
 | `campaigns:write` | **Criar e editar campanhas**. |
 | `projects:write` | **Atualizar projetos** (meta, prazo, campanha). |
+| `donations:write` | **Reservado** para registrar doações via API. Aparece na tela, mas ainda **não há endpoint público** para ele — deixe desmarcado até que uma integração de escrita de doações seja disponibilizada. |
 
 > ⚠️ **Atenção — `donors:read_pii` é sensível e auditado**
 >
@@ -273,9 +289,13 @@ compara com o valor recebido — se baterem, a mensagem é legítima.
 - **Reenvio automático:** se o destino não responder com sucesso, o plugin **tenta de
   novo** automaticamente por algumas vezes.
 - **Log de entregas:** cada destino tem um histórico de envios (data, evento, resposta),
-  para você ver o que chegou e o que falhou.
+  para você ver o que chegou e o que falhou. Nas entregas que **falharam**, um ícone de
+  informação (ⓘ) mostra o **último erro** ao passar o mouse — ajuda a diagnosticar (URL
+  errada, destino fora do ar, assinatura recusada) sem sair da tela.
 - **Enviar teste:** o botão **Enviar teste** dispara um evento de exemplo para a URL,
   útil para conferir se o n8n está recebendo e validando a assinatura corretamente.
+- As ações de webhook (cadastrar destino, enviar teste) também mostram um **aviso de
+  confirmação** ao concluir.
 
 ---
 

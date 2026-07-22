@@ -52,12 +52,15 @@ Na parte inferior da tela:
 
 - **Exportar relatório CSV** por intervalo de datas.
 - **Exportar doadores (XLSX)** — respeita a busca ativa, inclui anonimizados e traz
-  CPF/CEP/telefone como texto (para não “quebrar” na planilha).
+  CPF, **CNPJ** (para doadores pessoa jurídica), CEP e telefone como texto (para não
+  “quebrar” na planilha).
 - **Manutenção**: *reprocessar recibos pendentes* e *atribuir projeto às doações
   antigas* (útil para doações anteriores à organização por projetos). O *reprocessar
   recibos pendentes* também **recupera doações pagas que ficaram sem doador** (por
   exemplo, se o meio de pagamento não registrou o doador na hora): ele cria o doador
-  e gera o recibo faltante.
+  e gera o recibo faltante. Ao terminar, cada ação de manutenção mostra um **aviso com
+  a contagem** do que foi processado — você sabe na hora quantos recibos foram
+  reprocessados ou quantas doações foram atribuídas.
 
 > ⚠️ **Atenção — dados pessoais**
 >
