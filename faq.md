@@ -59,6 +59,17 @@ arrecadação, com meta e prazo, que agrupa projetos. Veja
 Use o shortcode `[rit360sol_transparencia]`. Ele mostra o arrecadado e a meta, sem
 nomes de doadores.
 
+**Para que serve a categoria do projeto? Preciso mexer nela?**
+Não precisa. É o que faz o dinheiro de cada projeto chegar **separado** na
+prestação de contas — sem ela, todas as doações apareceriam misturadas. O
+plugin cria a categoria sozinho quando você não escolhe uma. Veja
+[Projetos de doação](/modulos/projetos/#por-que-cada-projeto-tem-uma-categoria).
+
+**Por que o produto de doação sumiu da loja?**
+Ele não some — só deixou de aparecer no catálogo e na busca da loja, desde a
+versão 2.25. A página do projeto e o link direto continuam funcionando
+normalmente. Veja [Produto de doação](/modulos/produto-de-doacao/).
+
 ## Recorrência e lembretes
 
 **O RIT360 Solidário faz assinatura mensal?**

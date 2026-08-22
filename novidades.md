@@ -5,7 +5,7 @@ permalink: /novidades/
 task: novidades
 role: admin
 source_docs: [CHANGELOG.md]
-last_verified: 2026-07-21
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -18,6 +18,26 @@ aparece em **Plugins**, na lista de plugins do WordPress.
 >
 > Esta é a versão amigável do histórico. O registro técnico completo fica no
 > `CHANGELOG.md` do projeto.
+
+---
+
+## Versão 2.25 — Prestação de contas separada por projeto
+
+- **Cada projeto ganhou uma categoria própria.** Na tela
+  [Projetos de doação](/modulos/projetos/), cada projeto agora tem uma
+  **categoria** do WooCommerce (`Doações › Nome do projeto`). É o que faz a
+  receita das doações chegar **separada por projeto** na prestação de contas e
+  no RIT360 Financeiro, em vez de tudo misturado. Não escolheu nada? O plugin
+  cria a categoria sozinho, com o nome do projeto.
+- **O produto de doação saiu da loja.** O produto de cada projeto deixou de
+  aparecer no catálogo e na busca da loja virtual. Ele continua funcionando
+  normalmente — a página do projeto e o link direto do produto seguem no ar.
+  Se você divulgava pela navegação da loja, use a partir de agora a página do
+  projeto ou o link direto.
+- **Quem já usava o plugin não precisa fazer nada.** Ao atualizar, o plugin
+  organiza sozinho os projetos existentes: esconde os produtos da loja e cria
+  as categorias que faltam. Categoria que você já tinha colocado à mão num
+  produto **não é apagada** — a do projeto é somada a ela.
 
 ---
 

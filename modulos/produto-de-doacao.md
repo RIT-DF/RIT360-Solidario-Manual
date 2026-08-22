@@ -8,7 +8,7 @@ role: admin
 routes: ["#/wp-admin/post.php?action=edit"]
 screenshots: [produto-doacao]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-15
+last_verified: 2026-08-21
 status: publicado
 ---
 
@@ -47,3 +47,19 @@ WooCommerce — e também aparecem na página de doação.
 > Você normalmente não precisa criar produtos “na mão”: ao criar um
 > [projeto](/modulos/projetos/), o plugin já gera o produto de doação
 > correspondente. Esta tela é onde você o **enriquece**.
+
+## Este produto não aparece na loja
+
+Desde a versão 2.25, o produto de doação **não aparece mais no catálogo nem na
+busca** da sua loja WooCommerce. Ele continua funcionando normalmente: a
+[página do projeto](/modulos/projetos/) e o link direto do produto seguem no
+ar, e quem tem o link continua doando sem nenhuma diferença. O que muda é que
+ele não aparece mais para quem navega pela loja.
+
+> ⚠️ **Atenção — se você divulgava pelo catálogo da loja**
+>
+> Se a sua organização divulgava o produto de doação deixando o visitante
+> **navegar até ele pela loja**, esse caminho deixa de existir. Divulgue sempre
+> pela [página do projeto](/modulos/projetos/) (a URL `/nome-do-projeto`) ou
+> pelo link direto do produto — são os dois caminhos que continuam
+> funcionando.

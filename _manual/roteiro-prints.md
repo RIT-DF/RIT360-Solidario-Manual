@@ -12,6 +12,23 @@ Destino dos arquivos: `manual/assets/img/`.
 > reusaram o CSS existente (visualmente idênticas). `api-chaves.png` passou a ser
 > capturada (estado "Expirada" + entrega de webhook "failed" com tooltip de erro).
 
+> **Pendente — v2.25.0 (issue #59, categoria por projeto):** `projetos.png`
+> precisa de recaptura — a lista de projetos ganhou a coluna/campo
+> **Categoria**, com a hierarquia `Doações › Nome do projeto` visível.
+> Cenário sugerido: os três projetos de exemplo ("Doação para nossa causa",
+> "Creche Semear", "Cestas Básicas"), com o "Cestas Básicas" mostrando também a
+> categoria "Doações da Igreja" posta à mão — é o exemplo visual de que a
+> categoria do usuário é preservada (ver nota de migração em
+> `modulos/projetos.md`). **Não capturado nesta rodada: sessão de admin
+> indisponível** (esta skill não autentica; ver relatório).
+>
+> Foi pedida também uma captura em **mobile** da mesma tela — este manual
+> hoje só declara viewport único (1920×1080, `manual.config.yaml`); não há
+> convenção de screenshot mobile aqui ainda. Sugestão: `projetos-mobile.png`,
+> 375×812 (padrão de celular da família), sem alterar o `viewport` padrão do
+> `manual.config.yaml` — tratar como exceção pontual desta página até haver
+> decisão de estender a convenção. **Também pendente por falta de sessão.**
+
 ## Pendências de recaptura (fazer junto da próxima implementação)
 
 Ambas foram migradas para React (F3b) mas **ficaram fora da recaptura de 2026-07-21**
@@ -39,7 +56,7 @@ UI PHP antiga. Recapturar quando houver a próxima mexida no plugin:
 | `painel.png` | `/wp-admin/admin.php?page=rit360-solidario` | KPIs + Top 10 doadores |
 | `doadores-lista.png` | `…?page=rit360-solidario-donors` | Busca, tabela de doadores, ações em lote, blocos de exportação (página inteira) |
 | `doador-detalhe.png` | clicar num doador da lista (ex.: Roberto Nascimento) | Dados + Recibos + Declarações |
-| `projetos.png` | `…?page=rit360-solidario-projetos` | Lista de projetos com meta/campanha/padrão + form "Novo projeto" (página inteira) |
+| `projetos.png` | `…?page=rit360-solidario-projetos` | Lista de projetos com meta/campanha/padrão/**categoria** (`Doações › Nome do projeto`) + form "Novo projeto" (página inteira) |
 | `campanhas.png` | `…?page=rit360-solidario-campanhas` | Lista de campanhas com progresso vs meta |
 | `prestacao-contas.png` | `…?page=rit360-solidario-prestacao-contas` | Filtro de período + totais + quebra por campanha/projeto + evolução (página inteira) |
 | `config-organizacao.png` | `…?page=rit360-solidario-settings&tab=organizacao` | Formulário de dados da OSC |
