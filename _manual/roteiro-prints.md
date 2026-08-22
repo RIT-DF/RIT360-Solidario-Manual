@@ -12,22 +12,11 @@ Destino dos arquivos: `manual/assets/img/`.
 > reusaram o CSS existente (visualmente idênticas). `api-chaves.png` passou a ser
 > capturada (estado "Expirada" + entrega de webhook "failed" com tooltip de erro).
 
-> **Pendente — v2.25.0 (issue #59, categoria por projeto):** `projetos.png`
-> precisa de recaptura — a lista de projetos ganhou a coluna/campo
-> **Categoria**, com a hierarquia `Doações › Nome do projeto` visível.
-> Cenário sugerido: os três projetos de exemplo ("Doação para nossa causa",
-> "Creche Semear", "Cestas Básicas"), com o "Cestas Básicas" mostrando também a
-> categoria "Doações da Igreja" posta à mão — é o exemplo visual de que a
-> categoria do usuário é preservada (ver nota de migração em
-> `modulos/projetos.md`). **Não capturado nesta rodada: sessão de admin
-> indisponível** (esta skill não autentica; ver relatório).
->
-> Foi pedida também uma captura em **mobile** da mesma tela — este manual
-> hoje só declara viewport único (1920×1080, `manual.config.yaml`); não há
-> convenção de screenshot mobile aqui ainda. Sugestão: `projetos-mobile.png`,
-> 375×812 (padrão de celular da família), sem alterar o `viewport` padrão do
-> `manual.config.yaml` — tratar como exceção pontual desta página até haver
-> decisão de estender a convenção. **Também pendente por falta de sessão.**
+> **v2.25.0 (issue #59):** `projetos.png` recapturada com o campo Categoria visível
+> (`Doações › Nome do projeto`), no cenário dos três projetos. Capturada também
+> `projetos-mobile.png` (375×812) — primeira captura mobile deste manual; estender
+> a convenção mobile ao resto é decisão do Bruno.
+
 
 ## Pendências de recaptura (fazer junto da próxima implementação)
 
