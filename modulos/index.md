@@ -20,6 +20,7 @@ painel do WordPress; os fluxos do doador acontecem no site público.
 - [**Prestação de contas**](/modulos/prestacao-contas/) — relatórios em PDF, CSV e XLSX.
 - [**Configurações**](/modulos/configuracoes/) — organização, identidade visual, lembretes, e-mails, PDF e avançado.
 - [**Auditoria LGPD**](/modulos/auditoria-lgpd/) — trilha de ações e bases legais.
+- [**Licença**](/modulos/licenca/) — ativação e status das atualizações automáticas.
 
 ## No site público (doador)
 
