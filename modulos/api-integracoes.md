@@ -5,10 +5,10 @@ parent: "Módulos"
 permalink: /modulos/api-integracoes/
 task: modulo-api-integracoes
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-shortcodes"]
+routes: ["admin.php?page=rit360-solidario#/api"]
 screenshots: [api-chaves]
 source_docs: [PRODUCT.md, CHANGELOG.md]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 
@@ -20,7 +20,8 @@ qualquer aplicativo que fale HTTP. Com ela você pode, por exemplo, mandar cada 
 doação para uma planilha, avisar a equipe no chat quando bater a meta de uma campanha,
 ou criar campanhas a partir de outro sistema.
 
-Tudo é gerenciado no menu **RIT360 Solidário → Shortcodes e API**, na aba **API**.
+Tudo é gerenciado em **RIT360 Solidário**, grupo **Configurações** na barra de
+navegação, aba **API**.
 
 > 💡 **Nota — para quem é esta página**
 >
@@ -52,7 +53,7 @@ está acessando e **o que essa integração pode fazer** (os escopos).
 
 ### Criar uma chave
 
-1. Abra **RIT360 Solidário → Shortcodes e API** e vá à aba **API**.
+1. Entre em **RIT360 Solidário**, abra o grupo **Configurações** na barra e vá à aba **API**.
 2. Em **Chaves de integração**, clique em **Nova chave**.
 3. Dê um **nome** que ajude a lembrar para que serve (ex.: "n8n — planilha de doações").
 4. Marque as **permissões (escopos)** que essa chave precisa — e **apenas** essas (veja

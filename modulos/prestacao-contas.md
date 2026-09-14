@@ -5,10 +5,10 @@ parent: "Módulos"
 permalink: /modulos/prestacao-contas/
 task: modulo-prestacao-contas
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-prestacao-contas"]
+routes: ["admin.php?page=rit360-solidario#/accountability"]
 screenshots: [prestacao-contas]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

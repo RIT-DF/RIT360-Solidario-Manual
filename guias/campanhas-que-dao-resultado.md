@@ -5,10 +5,10 @@ parent: "Guias e boas práticas"
 permalink: /guias/campanhas-que-dao-resultado/
 task: guia-campanhas
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-campanhas", "#/wp-admin/admin.php?page=rit360-solidario-projetos"]
+routes: ["admin.php?page=rit360-solidario#/campaigns", "admin.php?page=rit360-solidario#/projects"]
 screenshots: [campanhas, projetos, transparencia]
 source_docs: [PRODUCT.md, PRD]
-last_verified: 2026-07-15
+last_verified: 2026-09-14
 status: publicado
 ---
 
@@ -68,14 +68,14 @@ ninguém doa hoje o que pode doar “qualquer dia”.
 
 ## Passo 3 — Monte no plugin
 
-1. Em **RIT360 Solidário → Projetos de doação**, crie (ou ajuste) os projetos da
-   campanha: nome, valores sugeridos, valor livre e, se quiser, a meta do
-   projeto. Enriqueça a página com imagem, **frase de impacto**, vídeo e
-   descrição — isso aumenta a conversão.
+1. Em **RIT360 Solidário**, grupo **Doações** na barra, aba **Projetos de
+   doação**, crie (ou ajuste) os projetos da campanha: nome, valores sugeridos,
+   valor livre e, se quiser, a meta do projeto. Enriqueça a página com imagem,
+   **frase de impacto**, vídeo e descrição — isso aumenta a conversão.
 
    ![Projetos de doação](/assets/img/projetos.png)
 
-2. Em **RIT360 Solidário → Campanhas**, crie a campanha: nome, descrição, meta,
+2. Na mesma barra, aba **Campanhas**, crie a campanha: nome, descrição, meta,
    início e prazo. Depois, **atribua os projetos** a ela.
 
    ![Campanhas](/assets/img/campanhas.png)
@@ -112,7 +112,8 @@ O fim de uma campanha é o começo da próxima. Quem se sente reconhecido e vê 
 dinheiro chegou onde deveria, doa de novo.
 
 - Todo doador já recebe **agradecimento e recibo automáticos**. Personalize o
-  tom desses e-mails em [Configurações → Templates de e-mail](/modulos/configuracoes/).
+  tom desses e-mails na aba **Templates de e-mail**, dentro de
+  [Configurações](/modulos/configuracoes/).
 - Ative o **lembrete mensal** para convidar quem optou por recebê-lo a repetir a
   doação (recorrência “soft”, sem assinatura e com cancelamento em um clique).
 - Feche a campanha com uma **prestação de contas**: gere o relatório em PDF/CSV/XLSX

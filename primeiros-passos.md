@@ -4,10 +4,10 @@ nav_order: 2
 permalink: /primeiros-passos/
 task: primeiros-passos
 role: admin
-routes: ["#/wp-admin/admin.php?page=bs-setup", "#/wp-admin/admin.php?page=rit360-solidario"]
-screenshots: [setup-wizard, painel, doe-pagina, feedback-modal]
+routes: ["admin.php?page=rit360-solidario#/wizard", "admin.php?page=rit360-solidario"]
+screenshots: [setup-wizard, menu-entrada-unica, painel, doacoes-grupo-aberto-mobile, feedback-modal, doe-pagina]
 source_docs: [PRD#5.4, PRODUCT.md]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 
@@ -36,23 +36,50 @@ Antes de começar, vale entender os dois papéis:
 > desistência — e ainda evita guardar mais dados pessoais do que o necessário
 > (um princípio da LGPD).
 
-## O cabeçalho das telas do plugin
+## Como navegar no painel
 
-Todas as telas do RIT360 Solidário no painel administrativo têm um **cabeçalho**
-no topo, com a logomarca à esquerda e, logo abaixo do título, o nome da seção e a
-**versão instalada** (por exemplo, “RIT360 Solidário · v2.24.0”). É o jeito rápido
-de conferir qual versão você está usando.
+Tudo do RIT360 Solidário mora numa **única entrada** no menu lateral do WordPress
+— não existe mais o menu com um item para cada tela. Ao clicar em **RIT360
+Solidário**, você entra no painel e navega por dentro dele, com três peças:
 
-No canto superior direito ficam dois botões, presentes em **qualquer tela** do
-plugin:
+![Menu lateral com a entrada única](/assets/img/menu-entrada-unica.png)
 
-- **Manual do usuário** — abre este manual on-line.
-- **Enviar feedback** — abre uma janela para você relatar um problema, mandar uma
-  sugestão, deixar um elogio ou registrar um depoimento. Escolha o tipo, escreva a
-  mensagem (seu e-mail já vem preenchido para retorno) e, se quiser, anexe imagens
-  ou um PDF. É o canal direto para falar com a equipe do produto.
+- **Cabeçalho.** No topo de toda tela, com a logomarca à esquerda e, ao lado do
+  título da tela atual, a **versão instalada** (por exemplo, “v2.29.0”) — o jeito
+  rápido de conferir qual versão você está usando. No canto direito ficam dois
+  botões presentes em **qualquer tela**: **Manual do usuário** (abre este manual
+  on-line) e **Enviar feedback** (abre uma janela para você relatar um problema,
+  mandar uma sugestão, deixar um elogio ou registrar um depoimento — escolha o
+  tipo, escreva a mensagem, com seu e-mail já preenchido para retorno, e anexe
+  imagens ou um PDF se quiser).
 
-![A janela “Enviar feedback”](/assets/img/feedback-modal.png)
+  ![A janela “Enviar feedback”](/assets/img/feedback-modal.png)
+
+- **Barra de navegação.** Logo abaixo do cabeçalho, é por ela que você troca de
+  tela: **Painel** (solto) · **Doações** (Doadores, Projetos de doação, Campanhas,
+  Prestação de contas) · **Configurações** (Configurações, Auditoria LGPD,
+  Shortcodes e API, API, Licença — confira na sua tela quais desses grupos e
+  abas aparecem, porque isso pode variar). A tela em que você está fica marcada em
+  verde-azulado, e clicar num grupo abre as abas de dentro dele.
+
+  ![O grupo Doações aberto na barra](/assets/img/doacoes-grupo-aberto-mobile.png)
+
+- **Área de avisos.** Abaixo da barra, os avisos do próprio WordPress (por
+  exemplo, sobre atualização disponível) ganharam um lugar próprio — eles não se
+  misturam mais com o conteúdo da tela.
+
+> 💡 **Favorito antigo continua funcionando**
+>
+> Se você salvou um atalho ou favorito para um endereço antigo (de antes desta
+> versão), ele continua levando à tela certa — inclusive **Configurações** lembra
+> em qual aba você estava. Não precisa refazer os favoritos.
+
+> ⚠️ **Configuração inicial incompleta**
+>
+> Enquanto o assistente de configuração não for concluído, a entrada **RIT360
+> Solidário** abre direto o assistente, e a barra de navegação não aparece —
+> ela só existe depois que a configuração inicial está pronta. Veja o passo a
+> passo em [3. O Assistente de configuração](#3-o-assistente-de-configuração-3-passos).
 
 ## 1. Requisitos
 
@@ -107,8 +134,9 @@ doação, gerenciar produtos e reabrir o assistente.
 
 ## 4. Conferir que está tudo pronto
 
-Abra o menu **RIT360 Solidário → Painel**. Ele mostra os indicadores da sua
-operação — no começo, tudo zerado, com um convite para receber a primeira doação.
+Entre em **RIT360 Solidário** — a primeira tela já é o **Painel**. Ele mostra os
+indicadores da sua operação — no começo, tudo zerado, com um convite para
+receber a primeira doação.
 
 ![Painel do RIT360 Solidário](/assets/img/painel.png)
 

@@ -5,10 +5,10 @@ parent: "Módulos"
 permalink: /modulos/doadores/
 task: modulo-doadores
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-donors"]
+routes: ["admin.php?page=rit360-solidario#/donors"]
 screenshots: [doadores-lista, doador-detalhe]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

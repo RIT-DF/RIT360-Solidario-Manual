@@ -5,10 +5,10 @@ parent: "Módulos"
 permalink: /modulos/configuracoes/
 task: modulo-configuracoes
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-settings"]
+routes: ["admin.php?page=rit360-solidario#/settings"]
 screenshots: [config-organizacao, config-visual, config-lembretes, config-emails, config-pdf, config-avancado]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

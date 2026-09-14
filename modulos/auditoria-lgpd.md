@@ -5,10 +5,10 @@ parent: "Módulos"
 permalink: /modulos/auditoria-lgpd/
 task: modulo-lgpd
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-lgpd"]
+routes: ["admin.php?page=rit360-solidario#/lgpd"]
 screenshots: [auditoria-lgpd]
 source_docs: [solidario-privacy-ropa.md, solidario-privacy-ropa.md#26, solidario-privacy-ropa.md#27, solidario-privacy-ropa.md#29]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

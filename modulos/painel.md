@@ -5,17 +5,18 @@ parent: "Módulos"
 permalink: /modulos/painel/
 task: modulo-painel
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario"]
+routes: ["admin.php?page=rit360-solidario"]
 screenshots: [painel]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 
 # Painel
 
-O Painel é a primeira tela do menu **RIT360 Solidário**. Ele resume a sua
-operação de doações no período escolhido.
+O Painel é a primeira tela ao entrar em **RIT360 Solidário** — o item **Painel**
+solto na barra de navegação, antes dos grupos Doações e Configurações. Ele resume
+a sua operação de doações no período escolhido.
 
 ![Painel](/assets/img/painel.png)
 

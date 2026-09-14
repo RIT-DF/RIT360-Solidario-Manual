@@ -5,10 +5,10 @@ parent: "Módulos"
 permalink: /modulos/licenca/
 task: modulo-licenca
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-license"]
+routes: ["admin.php?page=rit360-solidario#/license"]
 screenshots: [licenca]
 source_docs: [PRODUCT.md]
-last_verified: 2026-08-28
+last_verified: 2026-09-14
 status: publicado
 ---
 
@@ -24,13 +24,14 @@ status: publicado
 
 ## Onde fica
 
-Menu **RIT360 Solidário → Licença**.
+Entre em **RIT360 Solidário** e abra o grupo **Configurações** na barra de
+navegação; a aba **Licença** é a última desse grupo.
 
 ![Licença — nenhuma ativada](/assets/img/licenca.png)
 
 ## Como ativar
 
-1. Abra **RIT360 Solidário → Licença**.
+1. Abra **RIT360 Solidário**, grupo **Configurações** na barra, aba **Licença**.
 2. No bloco **Ativar licença**, cole a **chave de licença** (formato `V3RL-XXXX-XXXX-XXXX-XXXX`) no
    campo **Chave de licença**.
 3. Clique em **Ativar**.

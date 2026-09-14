@@ -38,32 +38,49 @@ UI PHP antiga. Recapturar quando houver a próxima mexida no plugin:
 - Esperar a tela carregar antes de capturar. Preferir viewport (não fullPage),
   exceto onde indicado "página inteira".
 
+> **Recaptura 2026-09-14 (plugin v2.29.0, issue #76):** o painel migrou para a peça
+> compartilhada da família — entrada única no menu lateral (`RIT360 Solidário`, sem
+> submenus), cabeçalho de largura cheia (não mais cartão centralizado com borda
+> laranja) e uma **barra de navegação** logo abaixo (Painel · Doações · Configurações,
+> com as sub-abas de cada grupo). As rotas passaram a ser **fragmentos dentro da
+> mesma página** (`admin.php?page=rit360-solidario#/donors`), não mais slugs próprios
+> — os endereços antigos (`page=rit360-solidario-donors` etc.) continuam funcionando
+> por redirecionamento, mas não são mais o caminho a capturar. **Todo o admin foi
+> recapturado** contra esse layout. Novos arquivos: `menu-entrada-unica.png` (+
+> `-mobile`), `painel-mobile.png`, `doacoes-grupo-aberto-mobile.png`,
+> `configuracoes-grupo-aberto-mobile.png`. `setup-wizard.png` **não** foi recapturado
+> (o assistente não tem barra e exigiria forçar o plugin a um estado de setup
+> incompleto, o que altera dados do ambiente — ver pendência abaixo).
+
 ## Admin — logado
 
 | Arquivo | Rota | Deve mostrar |
 |---|---|---|
-| `painel.png` | `/wp-admin/admin.php?page=rit360-solidario` | KPIs + Top 10 doadores |
-| `doadores-lista.png` | `…?page=rit360-solidario-donors` | Busca, tabela de doadores, ações em lote, blocos de exportação (página inteira) |
-| `doador-detalhe.png` | clicar num doador da lista (ex.: Roberto Nascimento) | Dados + Recibos + Declarações |
-| `projetos.png` | `…?page=rit360-solidario-projetos` | Lista de projetos com meta/campanha/padrão/**categoria** (`Doações › Nome do projeto`) + form "Novo projeto" (página inteira) |
-| `campanhas.png` | `…?page=rit360-solidario-campanhas` | Lista de campanhas com progresso vs meta |
-| `prestacao-contas.png` | `…?page=rit360-solidario-prestacao-contas` | Filtro de período + totais + quebra por campanha/projeto + evolução (página inteira) |
-| `config-organizacao.png` | `…?page=rit360-solidario-settings&tab=organizacao` | Formulário de dados da OSC |
-| `config-visual.png` | `…&tab=visual` | Cores + preview |
-| `config-lembretes.png` | `…&tab=lembretes` | Ativar lembretes + intervalo + envio manual |
-| `config-emails.png` | `…&tab=emails` | Templates (assunto+corpo TinyMCE) + botão único "Salvar todos os templates" (página inteira) |
-| `config-pdf.png` | `…&tab=pdf` | Cabeçalho/rodapé/recibo/declaração + pré-visualizar (página inteira) |
-| `config-avancado.png` | `…&tab=avancado` | Reset de rate limit do magic link |
-| `auditoria-lgpd.png` | `…?page=rit360-solidario-lgpd` | Aviso ROPA + tabela de auditoria |
-| `shortcodes-tela.png` | `…?page=rit360-solidario-shortcodes` | Referência dos shortcodes em cards (tag + exemplo copiável + parâmetros), página inteira — v2.7.0 |
-| `setup-wizard.png` | `…?page=bs-setup` | Passo 1 do Setup Wizard (Organização) |
+| `menu-entrada-unica.png` (+ `-mobile`) | menu lateral do WordPress, expandido | A entrada única **RIT360 Solidário**, sem submenus abaixo dela |
+| `painel.png` (+ `-mobile`) | `/wp-admin/admin.php?page=rit360-solidario` | Cabeçalho + barra (Painel · Doações · Configurações) + KPIs/estado vazio |
+| `doadores-lista.png` / `doacoes-grupo-aberto-mobile.png` | `…admin.php?page=rit360-solidario#/donors` | Barra com o grupo **Doações** aberto (Doadores · Projetos de doação · Campanhas · Prestação de contas); busca, tabela, ações em lote, exportações |
+| `doador-detalhe.png` | clicar num doador da lista | Dados + Recibos + Declarações |
+| `projetos.png` (+ `-mobile`) | `…#/projects` | Lista de projetos com meta/campanha/padrão/**categoria** + form "Novo projeto" |
+| `campanhas.png` | `…#/campaigns` | Lista de campanhas com progresso vs meta |
+| `prestacao-contas.png` | `…#/accountability` | Filtro de período + totais + quebra por campanha/projeto + evolução |
+| `config-organizacao.png` / `configuracoes-grupo-aberto-mobile.png` | `…#/settings` | Barra com o grupo **Configurações** aberto (Configurações · Auditoria LGPD · Shortcodes e API · API · Licença) e as sub-abas internas (Organização · Identidade visual · Lembretes · Templates de e-mail · Documentos PDF · Avançado) |
+| `config-visual.png` | `…#/settings/visual` | Cores + preview |
+| `config-lembretes.png` | `…#/settings/lembretes` | Ativar lembretes + intervalo + envio manual |
+| `config-emails.png` | `…#/settings/emails` | Templates (assunto+corpo TinyMCE) + botão único "Salvar todos os templates" |
+| `config-pdf.png` | `…#/settings/pdf` | Cabeçalho/rodapé/recibo/declaração + pré-visualizar |
+| `config-avancado.png` | `…#/settings/avancado` | Reset de rate limit do magic link |
+| `auditoria-lgpd.png` | `…#/lgpd` | Aviso ROPA + tabela de auditoria |
+| `shortcodes-tela.png` | `…#/shortcodes` | Referência dos shortcodes em cards |
+| `api-chaves.png` | `…#/api` | Endereço base, Nova chave, Chaves, Webhooks |
+| `licenca.png` | `…#/license` | Status + ativação |
+| `setup-wizard.png` | `…?page=bs-setup` — **⏳ pendente de recaptura**, exige plugin em modo setup | Passo 1 do assistente (o assistente não tem barra por desenho) |
 | `produto-doacao.png` | editar produto 67 (`/wp-admin/post.php?post=67&action=edit`), aba "Configuração de Doação" | Campos: valores, valor livre, frase de impacto, vídeo |
 | `feedback-modal.png` | qualquer tela do plugin → clicar "Enviar feedback" | Modal de feedback |
 
-## API e integrações — `api-chaves.png` (capturada em v2.24.0)
+## API e integrações — `api-chaves.png` (recapturada em v2.29.0)
 
-Rota: menu **RIT360 Solidário → Shortcodes e API → API** (submenu "API"). Página inteira,
-admin logado, 1920×1080. A tela agrupa numa só captura: **endereço base**, **Nova chave**
+Rota: `admin.php?page=rit360-solidario#/api` (grupo **Configurações** na barra, aba
+**API**). Página inteira, admin logado, 1920×1080. A tela agrupa numa só captura: **endereço base**, **Nova chave**
 (rótulo + escopos + validade), **Chaves** (com estados *Ativa*/*Expirada*/*Revogada*),
 **Novo destino** de webhook, **Webhooks** e **Últimas entregas** (com entrega *failed* +
 tooltip de erro). Referenciada em `modulos/api-integracoes.md` (front-matter `screenshots:

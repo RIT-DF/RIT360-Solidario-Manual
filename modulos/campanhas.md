@@ -5,10 +5,10 @@ parent: "Módulos"
 permalink: /modulos/campanhas/
 task: modulo-campanhas
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-campanhas"]
+routes: ["admin.php?page=rit360-solidario#/campaigns"]
 screenshots: [campanhas]
 source_docs: [PRODUCT.md]
-last_verified: 2026-07-21
+last_verified: 2026-09-14
 status: publicado
 ---
 

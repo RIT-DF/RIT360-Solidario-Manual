@@ -5,10 +5,10 @@ parent: "Módulos"
 permalink: /modulos/projetos/
 task: modulo-projetos
 role: admin
-routes: ["#/wp-admin/admin.php?page=rit360-solidario-projetos"]
+routes: ["admin.php?page=rit360-solidario#/projects"]
 screenshots: [projetos]
 source_docs: [PRODUCT.md]
-last_verified: 2026-08-21
+last_verified: 2026-09-14
 status: publicado
 ---
 
