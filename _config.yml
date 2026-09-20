@@ -60,6 +60,13 @@ callouts:
     color: purple
 
 # Rodapé
+# ⚠️ `footer_content` NÃO renderiza nada. A versão do just-the-docs que estes
+# sites usam ignora essa chave — o valor abaixo está aqui e não aparece em
+# página nenhuma. Não é problema: o rodapé vazio é o que se quer, e a frase de
+# atribuição do tema é removida por _includes/nav_footer_custom.html.
+# O registro existe porque a chave parece funcionar e não funciona: quem
+# precisar mesmo de texto no rodapé um dia deve editar aquele include, não
+# esta linha. (Descoberto no manual do RIT360 Realiza, 20/09/2026.)
 footer_content: '<strong>RIT360 Solidário</strong> — ferramenta da <a href="https://rit.org.br" target="_blank" rel="noopener">RIT — Rede de Inovação e Transformação</a>, desenvolvida pela <a href="https://v3rtech.com.br" target="_blank" rel="noopener">V3RTECH</a>. Software livre sob licença GPL. Esta ferramenta apoia a gestão de doações, mas não substitui assessoria jurídica ou tributária. © 2026 RIT. <a href="/legal/aviso/">Aviso legal</a>.'
 last_edit_timestamp: false
 back_to_top: true
